@@ -1,5 +1,5 @@
 import { carousel } from "./functions/carousel.js";
-import {contadorPlatos, FechaActual, platillos } from "./functions/functionsForm.js";
+import {contadorPlatos, FechaActual, platillos, sendForm } from "./functions/functionsForm.js";
 import {toogleMenu} from "./functions/toogleMenu.js";
 
 document.addEventListener("DOMContentLoaded",()=>{
@@ -12,6 +12,7 @@ document.addEventListener("DOMContentLoaded",()=>{
     contadorPlatos(".counter .contador-entrada ",".sumar-entrada",".restar-entrada");
     contadorPlatos(".counter .contador-principal ",".sumar-principal",".restar-principal");
     contadorPlatos(".counter .contador-postres",".sumar-postres",".restar-postres");
+    sendForm();
 });
 
 
