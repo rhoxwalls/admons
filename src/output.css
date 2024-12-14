@@ -995,8 +995,8 @@ video {
   background-image: url(./Assets/exibidoras.webp);
 }
 
-.bg-\[url\(\.\/assets\/hero-pattern\.jpg\)\] {
-  background-image: url(./assets/hero-pattern.jpg);
+.bg-\[url\(\.\/Assets\/hero-pattern\.jpg\)\] {
+  background-image: url(./Assets/hero-pattern.jpg);
 }
 
 .bg-center {

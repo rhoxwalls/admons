@@ -136,33 +136,40 @@ export function sendForm() {
     const comensales = formData.get("comensales");
     const fecha = formData.get("fecha");
     const hora =formData.get("hora");
-    const platillos =
-      formData.getAll("platillos[]").length > 0
-        ? formData.getAll("platillos[]").join(",")
-        : "Sin platillos";
     const comentarios = formData.get("comentarios");
     const nombre = formData.get("nombre");
     const apellido = formData.get("apellido");
     const numero = formData.get("numero");
-    console.log(formData);
+
+    if (!nombre || !apellido || !numero) {
+      alert("Por favor completa todos los campos requeridos");
+      return;
+    }
+
+    // Asociar platillos a contadores 
+     const platillos = [];
+    document.querySelectorAll("#entrada, #principal, #postres").forEach((container) => {
+      const select = container.querySelector("select");
+      const contador = container.querySelector(".contador-entrada, .contador-principal, .contador-postres");
+      const cantidad = parseInt(contador.textContent);
+
+      if (cantidad > 0) {
+        platillos.push(`${select.value} (x${cantidad})`);
+      }
+    });
+
     // Validar número de teléfono
      function validatePhoneNumber(number) {
       // Expresión regular básica para números celulares internacionales
       const regex = /^\+?[1-9]\d{1,14}$/; // Basado en el formato E.164
       return regex.test(number);
     };
-
-    const testNumber = "+1234567890";
-    if (validatePhoneNumber(testNumber)) {
-      console.log("Número válido");
-    } else {
-      console.log("Número no válido");
-    }
-
-    if (!nombre || !apellido) {
-      alert("Por favor completa todos los campos requeridos");
+    
+    if (!validatePhoneNumber(numero)) {
+      alert("Por favor ingresa un número de teléfono válido");
       return;
     }
+
     // Crear mensaje de WhatsApp
     const mensaje = `Reservas:\n
     Comensales: ${comensales}\n
