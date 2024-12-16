@@ -999,6 +999,10 @@ video {
   background-image: url(./Assets/hero-pattern.jpg);
 }
 
+.bg-\[url\(\.\/Assets\/pexels-diego-moreno-3258495-9292084\.jpg\)\] {
+  background-image: url(./Assets/pexels-diego-moreno-3258495-9292084.jpg);
+}
+
 .bg-center {
   background-position: center;
 }
