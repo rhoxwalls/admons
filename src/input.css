@@ -1,3 +1,12 @@
+@layer base {
+  @font-face {
+    font-family: 'SansSerif';
+    font-style: normal;
+    font-weight: 400;
+    src: url("./Fonts/Serif.ttf") format('truetype');
+  }
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -20,5 +29,16 @@
       opacity: .2;
       z-index: 10;
     }
+  }
+
+  
+  .prev-button, .next-button{
+    font-style: italic;
+    font-family: cursive;
+    font-size: 1.5rem;
+    font-weight:600;
+    color:#0E1DBE;
+    text-shadow: 1px 1px 2px #1CD6D9;
+    margin-top: 0;
   }
   

@@ -34,7 +34,7 @@ export function platillos(
           "border",
           "rounded-full",
           "border-gray-600",
-          "p-3",
+          "p-2",
           "h-6",
           "flex",
           "items-center",
@@ -43,7 +43,7 @@ export function platillos(
 
         const contador = d.createElement("p");
         contador.textContent = "0";
-        contador.classList.add(`contador-${itemClass}`, "w-7", "text-center");
+        contador.classList.add(`contador-${itemClass}`, "w-5", "text-center");
 
         const sumarButton = d.createElement("button");
         sumarButton.textContent = "+";
@@ -53,7 +53,7 @@ export function platillos(
           "border",
           "rounded-full",
           "border-gray-600",
-          "p-3",
+          "p-2",
           "h-6",
           "flex",
           "items-center",
@@ -61,14 +61,13 @@ export function platillos(
         );
 
         const removeButton = d.createElement("button");
-        removeButton.textContent = "Eliminar";
+        removeButton.textContent = "❌";
         removeButton.classList.add(
           `remove-${itemClass}`,
           "bg-red-500",
           "text-white",
-          "px-2",
-          "py-1",
-          "rounded"
+          "rounded-full",
+          "mx-auto"
         );
 
         // Agregar elementos al contenedor
@@ -148,14 +147,19 @@ export function sendForm() {
 
     // Asociar platillos a contadores 
      const platillos = [];
-    document.querySelectorAll("#entrada, #principal, #postres").forEach((container) => {
-      const select = container.querySelector("select");
-      const contador = container.querySelector(".contador-entrada, .contador-principal, .contador-postres");
-      const cantidad = parseInt(contador.textContent);
-
-      if (cantidad > 0) {
-        platillos.push(`${select.value} (x${cantidad})`);
-      }
+     document.querySelectorAll("#entrada, #principal, #postres").forEach((container) => {
+      const rows = container.querySelectorAll(".flex"); // Selecciona todas las filas dinámicas
+      rows.forEach((row) => {
+        const select = row.querySelector("select");
+        const contador = row.querySelector(".contador-entrada, .contador-principal, .contador-postres");
+        if (select && contador) {
+          const cantidad = parseInt(contador.textContent);
+          if (cantidad > 0) {
+            platillos.push(`${select.value} (x${cantidad})`);
+            console.log(platillos)
+          }
+        }
+      });
     });
 
     // Validar número de teléfono

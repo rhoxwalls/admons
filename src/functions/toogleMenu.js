@@ -13,10 +13,10 @@ export function toogleMenu(buttonNav, ulNav) {
 
   $ButtonNav.addEventListener("click", () => {
     function desplegarMenu() {
-      if ($UlNav.classList.contains("hidden")) {
-        return $UlNav.classList.remove("hidden"), $UlNav.classList.add("flex");
+      if ($UlNav.classList.contains("phone:hidden")) {
+        return $UlNav.classList.remove("phone:hidden"), $UlNav.classList.add("flex");
       } else {
-        return $UlNav.classList.add("hidden"), $UlNav.classList.remove("flex");
+        return $UlNav.classList.add("phone:hidden"), $UlNav.classList.remove("flex");
       }
     }
     desplegarMenu();

@@ -6,16 +6,11 @@
     <link href="./output.css" rel="stylesheet" />
     <title>Prototipe</title>
   </head>
-  <body>  
-    <main
-      id="inicio"
-      class="flex max-w-[100%] min-h-[100vh] mt-0 relative custom-main bg-[url(./Assets/pexels-diego-moreno-3258495-9292084.jpg)] object-cover phone:bg-cover bg-center bg-no-repeat"
-    >
-      <header
-        class="h-[150px] z-30 w-full border border-gray-800 sticky top-0 flex bg-[url(./Assets/ADMONSinLetras.png)] object-cover phone:bg-cover bg-no-repeat"
-      >
-     
-        <button
+  <body class="font-SansSerif">
+     <header>
+        <nav class="h-[150px] z-30 w-full border border-gray-800 sticky top-0 flex bg-[url(./Assets/ADMONSinLetras.png)] object-cover phone:bg-cover bg-no-repeat laptop:bg-center">
+
+          <button
           data-collapse-toggle="mega-menu-icons"
           type="button"
           class="button-nav inline-flex items-center p-2 w-14 h-14 self-end justify-center text-sm text-gray-500 rounded-lg tablet:hidden"
@@ -37,25 +32,93 @@
             />
           </svg>
         </button>
-        <img src="./Assets/lettras.png" alt="letras" class="drop-shadow-[0px_0px_8px_#eee] mx-auto w-[70%] mt-2 absolute top-1 right-2 left-1">
-        <nav class="nav justify-end z-30 w-[90%] mx-auto mt-[40%] hidden">
-          <ul class="flex flex-col items-start pt-2 gap-3 mr-2">
-            <li><a href="#platos">Platos</a></li>
-            <li><a href="#bebidas">Bebidas</a></li>
-            <li><a href="#reservas">Reservas</a></li>
-            <li><a href="#nosotros">Sobre Nosotros</a></li>
-            <li><a href="#inicio">Inicio</a></li>
+        <img src="./Assets/lettras.png" alt="letras" class="
+        drop-shadow-[0px_0px_8px_#eee] 
+        phone:mx-auto 
+        phone:w-[70%] 
+        phone:mt-2 
+        phone:absolute 
+        phone:top-1 
+        phone:right-2 
+        phone:left-1
+        phone:h-[170px]
+        max-w-[650px]
+        tablet:static
+        tablet:h-[170px]
+        tablet:min-w-[250px]
+        tablet:mt-0
+        laptop:mr-auto
+        laptop:h-auto
+        laptop:mt-[-10px]
+        laptop:min-w-[250px]
+        ">
+          <ul class="
+          nav 
+          phone:justify-end
+          phone:w-[100%] 
+          phone:mx-auto 
+          phone:hidden
+          phone:flex-col
+          phone:mt-[320px]
+          tablet:mx-auto
+          tablet:absolute
+          tablet:flex
+          tablet:self-end
+          tablet:flex-row
+          tablet:justify-evenly
+          tablet:w-90%
+          font-bold
+          text-blue-600
+          laptop:justify-center
+          laptop:gap-2
+          laptop:text-xl
+          ">
+            <li class="text-end mr-4 py-1"><a href="#platos">Platos</a></li>
+            <li class="text-end mr-4 py-1"><a href="#bebidas">Bebidas</a></li>
+            <li class="text-end mr-4 py-1"><a href="#reservas">Reservas</a></li>
+            <li class="text-end mr-4 py-1"><a href="#nosotros">Sobre Nosotros</a></li>
+            <li class="text-end mr-4 py-1"><a href="#inicio">Inicio</a></li>
           </ul>
         </nav>
-      </header>
+      </header>  
+    <main id="inicio" class="flex max-w-[100%] min-h-[100vh] mt-0 relative custom-main bg-[url(./Assets/pexels-diego-moreno-3258495-9292084.jpg)] object-cover phone:bg-cover bg-center bg-no-repeat"
+    >
     </main>
     <section id="platos" class="flex h-[100vh] bg-[url(./Assets/BG-menu1.png)] object-cover phone:bg-cover bg-center bg-no-repeat">
-      <div
-        class=" my-auto mx-auto p-10 flex flex-col gap-2 h-[90%] w-[90%]  border-gray-500 overflow-scroll"
-      >
-        <div class="plato h-auto w-[100%] border border-gray-600 flex flex-col p-2">
+      <div class=" 
+        my-auto 
+        mx-auto 
+        overflow-scroll
+        p-10 
+        gap-2 
+        h-[90%] 
+        w-[90%]  
+        phone:flex 
+        phone:flex-col
+        tablet:grid
+        tablet:grid-cols-2
+        tablet:gap-4 
+        laptop:grid-cols-3
+        laptop:gap-10
+      ">
+        <div class="plato h-auto max-w-[400px] border border-gray-600 flex flex-col p-2">
           <div class=" w-[90%] self-center">
-            <img src="./Assets/plato1.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
+            <img src="./assets/plato1.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
+          </div>
+          <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
+            <div>
+            <h5 class="text-xl font-extrabold">asdasd</h5>
+            <p>aaLorem ipsum dolor, sitasdasd asdasdasda sdasdasdasda sdasda sdasd as dasdasd  asd asdasdasd asd asd as das </p>
+          </div>
+            <div class="flex justify-between  mb-2">
+              <span>$123</span>
+              <button>asd</button>
+            </div>
+          </div>
+        </div>
+        <div class="plato h-auto max-w-[400px] border border-gray-600 flex flex-col p-2">
+          <div class=" w-[90%] self-center">
+            <img src="./assets/plato2.jpg" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
           </div>
           <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
             <div>
@@ -68,9 +131,9 @@
             </div>
           </div>
         </div>
-        <div class="plato h-auto w-[100%] border border-gray-600 flex flex-col p-2">
+        <div class="plato h-auto max-w-[400px] border border-gray-600 flex flex-col p-2">
           <div class=" w-[90%] self-center">
-            <img src="./Assets/plato2.jpg" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
+            <img src="./assets/plato3.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
           </div>
           <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
             <div>
@@ -83,9 +146,9 @@
             </div>
           </div>
         </div>
-        <div class="plato h-auto w-[100%] border border-gray-600 flex flex-col p-2">
+        <div class="plato h-auto max-w-[400px] border border-gray-600 flex flex-col p-2">
           <div class=" w-[90%] self-center">
-            <img src="./Assets/plato3.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
+            <img src="./assets/plato5.jpg" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
           </div>
           <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
             <div>
@@ -98,24 +161,9 @@
             </div>
           </div>
         </div>
-        <div class="plato h-auto w-[100%] border border-gray-600 flex flex-col p-2">
-          <div class=" w-[90%] self-center">
-            <img src="./Assets/plato5.jpg" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
-          </div>
-          <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
-            <div>
-            <h5 class="text-xl font-extrabold">asdasd</h5>
-            <p>Lorem ipsum dolor, sitasdasd asdasdasda sdasdasdasda sdasda sdasd as dasdasd  asd asdasdasd asd asd as das </p>
-          </div>
-            <div class="flex justify-between  mb-2">
-              <span>$123</span>
-              <button>asd</button>
-            </div>
-          </div>
-        </div>
-        <div class="plato h-auto w-[100%] border border-gray-600 flex flex-col p-2">
-          <div class=" w-[90%] self-center">
-            <img src="./Assets/plato6.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
+        <div class="plato h-auto max-w-[400px] border border-gray-600 flex flex-col p-2">
+          <div class=" w-[90%] laptop:w-[90%] self-center">
+            <img src="./assets/plato6.png" alt="sorpresa de pescado" class="w-full h-40 mb-2 mt-2"/>
           </div>
           <div class=" w-full mt-auto h-[150px] flex flex-col justify-between">
             <div>
@@ -130,28 +178,39 @@
         </div>
       </div>
     </section>
-    <section id="bebidas" class=" h-[100vh] w-[100%] mb-40 ">
+    <section id="bebidas" class=" min-h-[80vh] phone:min-h-[100vh] w-full relative">
 
-<div class="container h-[300px] border border-black min-w-[100%] bg-[url(./Assets/BG-tragos.jpg)] phone:bg-cover bg-center bg-no-repeat">      
-  <div id="carousel-tragos" class="relative w-full h-[300px] overflow-hidden">
+<div class="
+container 
+h-[300px] 
+border 
+border-black
+min-w-[100%] 
+bg-no-repeat      
+bg-center 
+bg-[url(./assets/BG-tragos.jpg)] 
+phone:bg-cover
+"> 
+  <div id="carousel-tragos" class="mx-auto phone:w-full tablet:w-[80%] laptop:w-[60%] laptop:bg-center h-[300px] overflow-hidden">
   <div class="carousel-track flex transition-transform duration-700 ease-in-out w-[100%] h-[65%] ">
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
   </div>
-  <div class="flex justify-between text-white absolute w-full mt-16">
+  <div class="flex justify-between text-white w-full mt-16">
     <button id="prev-tragos" class="prev-button text-white p-2">Anterior</button>
     <button id="next-tragos" class="next-button text-white p-2">Siguiente</button>
   </div>
   </div>
 </div> 
 
-<div class="container h-[300px] border border-black min-w-[100%] bg-[url(./Assets/exibidoras.webp)] phone:bg-cover bg-center bg-no-repeat">      
-  <div id="carousel-exibidoras" class="relative w-full h-[300px] overflow-hidden">
+<div class="container h-[300px] border border-black min-w-[100%] bg-[url(./assets/exibidoras.webp)] object-contain phone:bg-cover bg-center bg-no-repeat"> 
+
+  <div id="carousel-exibidoras" class="relative mx-auto phone:w-full tablet:w-[80%] laptop:w-[60%] h-[300px] overflow-hidden">
   <div class="carousel-track flex transition-transform duration-700 ease-in-out w-[100%] h-[65%] ">
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
   </div>
   <div class="flex justify-between text-white absolute w-full mt-16">
     <button id="prev-exibidoras" class="prev-button text-white p-2">Anterior</button>
@@ -160,12 +219,12 @@
   </div>
 </div> 
 
-<div class="container h-[300px] border border-black min-w-[100%] bg-[url(./Assets/BG-licores.jpg)] phone:bg-cover bg-center bg-no-repeat">      
-  <div id="carousel-licores" class="relative w-full h-[300px] overflow-hidden">
+<div class="container h-[300px] border border-black min-w-[100%] bg-[url(./assets/BG-licores.jpg)] phone:bg-cover bg-center">      
+  <div id="carousel-licores" class="relative mx-auto phone:w-full tablet:w-[80%] laptop:w-[60%] h-[300px] overflow-hidden">
   <div class="carousel-track flex transition-transform duration-700 ease-in-out w-[100%] h-[65%] ">
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 1" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 2" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
-    <div class="carousel-item min-w-full"><img src="./Assets/pruva.webp" alt="Imagen 3" class="w-[50%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 1" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 2" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
+    <div class="carousel-item min-w-full"><img src="./assets/pruva.webp" alt="Imagen 3" class="w-[30%] h-full align-middle mx-auto rounded-xl border-white border self-center mt-10"></div>
   </div>
   <div class="flex justify-between text-white absolute w-full mt-16">
     <button id="prev-licores" class="prev-button text-white p-2">Anterior</button>
@@ -175,14 +234,15 @@
 </div> 
 
     </section>
-    <section id="reservas" class="min-h-[400px] max-w[600px] m-[0 auto] p-0 bg-[url(./Assets/BG-reservas.png)] object-cover phone:bg-cover bg-center bg-no-repeat"
+    <section id="reservas" class="min-h-screen w-full  mt-auto p-6 bg-[url(./assets/BG-reservas.png)] object-cover phone:bg-cover bg-center bg-no-repeat"
     >
-      <form  method="post" class="items-start">
-        <fieldset class="border border-blue-700 p-2">
-          <legend class="mx-auto text-4xl font-extrabold">Reservas</legend>
+      <form  method="post" class="items-start max-w-[600px] mx-auto">
+        <fieldset class="border border-blue-700 p-2 flex flex-col gap-4">
+          <legend class="mx-auto text-4xl font-extrabold tracking-widest">Reservas</legend>
 
           <label for="comensales">
-            <p>Cantidad de comensales</p>
+            <div class="flex flex-row gap-4">
+            <p class="text-xl font-bold underline">Cantidad de comensales:</p>
             <input 
               type="number" 
               id="comensales" 
@@ -192,10 +252,12 @@
               required 
               class="border border-gray-700 focus:outline-lime-600 rounded-lg"
             />
+          </div>
           </label>
 
           <label for="fecha">
-            <p>Fecha</p>
+            <div class="flex flex-row gap-4">
+            <h3 class="text-xl font-bold underline">Fecha:</h3>
             <input 
               type="date" 
               id="fecha" 
@@ -203,85 +265,91 @@
               required 
               class="border border-gray-700 focus:outline-lime-600 rounded-lg"
             />
+          </div>
           </label>
 
           <label for="hora">
-            <p>Hora</p>
+            <div class="flex flex-row gap-4">
+            <h3 class="text-xl font-bold underline">Hora:</h3>
             <input type="time" name="hora" id="hora" />
+          </div>
           </label>
 
             <!-- ENTRADAS -->
-            <h3>Selecciona los platillos:</h3>
-          <div id="entrada-container" class="flex flex-col">
-  <label for="entrada">Entrada</label>
+            <h2 class="text-2xl font-bold  mx-auto ">Selecciona los platillos</h2>
+          <div id="entrada-container" class="flex flex-col border-b-2 ">
+  <label for="entrada" class="text-xl font-bold underline">Entrada:</label>
   <div id="entrada" class="flex gap-2 mb-2 flex-col">
-    <select  name="platillos[]" class="border border-gray-700 rounded-lg">
-      <option value="Entrante1">Entrante 1</option>
-      <option value="Entrante2">Entrante 2</option>
-      <option value="Plato Principal 1">Plato Principal 1</option>
-      <option value="Plato Principal 2">Plato Principal 2</option>
-      <option value="Postre 1">Postre 1</option>
-      <option value="Postre 2">Postre 2</option>
-    </select>
+   
     <div class="counter flex gap-3">
-      <button class="restar-entrada border rounded-full border-gray-600 p-3 h-6 my-auto flex items-center justify-center" type="button">-</button>
-      <p class="contador-entrada w-7 text-center">0</p>
+      <select  name="platillos[]" class="border border-gray-700 rounded-lg">
+        <option value="Entrante1">Entrante 1</option>
+        <option value="Entrante2">Entrante 2</option>
+        <option value="Plato Principal 1">Plato Principal 1</option>
+        <option value="Plato Principal 2">Plato Principal 2</option>
+        <option value="Postre 1">Postre 1</option>
+        <option value="Postre 2">Postre 2</option>
+      </select>
+      <button class="restar-entrada border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">-</button>
+      <p class="contador-entrada w-5 text-center">0</p>
       <button class="sumar-entrada border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">+</button>
     </div>
-    <button type="button" class="add-entrada bg-green-500 text-white px-2 py-1 rounded">Agregar</button>
+    <button type="button" class="add-entrada bg-green-500 text-white italic rounded-full w-[80px] self-end">Agregar</button>
   </div>
 </div>
 
   <!--PLATO PRINCIAL-->
-  <div id="principal-container" class="">
-  <label for="principal">Plato Principal</label>
+  <div id="principal-container" class="flex flex-col border-b-2 ">
+  <label for="principal" class="text-xl font-bold underline">Plato Principal:</label>
   <div id="principal" class="flex gap-2 mb-2 flex-col">
-    <select name="platillos[]" class="border border-gray-700 rounded-lg">
-      <option value="Entrante1">Entrante 1</option>
-      <option value="Entrante2">Entrante 2</option>
-      <option value="Plato Principal 1">Plato Principal 1</option>
-      <option value="Plato Principal 2">Plato Principal 2</option>
-      <option value="Postre 1">Postre 1</option>
-      <option value="Postre 2">Postre 2</option>
-    </select>
+   
     <div class="counter flex gap-3">
-      <button class="restar-principal border rounded-full border-gray-600 p-3 h-6 my-auto flex items-center justify-center" type="button">-</button>
-      <p class="contador-principal w-7 text-center">0</p>
+      <select name="platillos[]" class="border border-gray-700 rounded-lg">
+        <option value="Entrante1">Entrante 1</option>
+        <option value="Entrante2">Entrante 2</option>
+        <option value="Plato Principal 1">Plato Principal 1</option>
+        <option value="Plato Principal 2">Plato Principal 2</option>
+        <option value="Postre 1">Postre 1</option>
+        <option value="Postre 2">Postre 2</option>
+      </select>
+      <button class="restar-principal border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">-</button>
+      <p class="contador-principal w-5 text-center">0</p>
       <button class="sumar-principal border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">+</button>
     </div>
-    <button type="button" class="add-principal bg-green-500 text-white px-2 py-1 rounded">Agregar</button>
+    <button type="button" class="add-principal bg-green-500 text-white  italic rounded-full w-[80px] self-end">Agregar</button>
   </div>
 </div>
 
   <!-- POSTRE -->
-   <div id="postres-container">
-  <label for="postres">Postres</label>
+   <div id="postres-container" class="flex flex-col border-b-2">
+  <label for="postres" class="text-xl font-bold underline">Postres:</label>
   <div id="postres" class="flex gap-2 mb-2 flex-col">
-    <select  name="platillos[]" class="border border-gray-700 rounded-lg">
-      <option value="Entrante1">Entrante 1</option>
-      <option value="Entrante2">Entrante 2</option>
-      <option value="Plato Principal 1">Plato Principal 1</option>
-      <option value="Plato Principal 2">Plato Principal 2</option>
-      <option value="Postre 1">Postre 1</option>
-      <option value="Postre 2">Postre 2</option>
-    </select>
+    
     <div class="counter flex gap-3">
-      <button class="restar-postres border rounded-full border-gray-600 p-3 h-6 my-auto flex items-center justify-center" type="button">-</button>
-      <p class="contador-postres w-7 text-center">0</p>
+      <select  name="platillos[]" class="border border-gray-700 rounded-lg">
+        <option value="Entrante1">Entrante 1</option>
+        <option value="Entrante2">Entrante 2</option>
+        <option value="Plato Principal 1">Plato Principal 1</option>
+        <option value="Plato Principal 2">Plato Principal 2</option>
+        <option value="Postre 1">Postre 1</option>
+        <option value="Postre 2">Postre 2</option>
+      </select>
+      <button class="restar-postres border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">-</button>
+      <p class="contador-postres w-5 text-center">0</p>
       <button class="sumar-postres border rounded-full border-gray-600 p-2 h-6 my-auto flex items-center justify-center" type="button">+</button>
     </div>
-    <button type="button" class="add-postres bg-green-500 text-white px-2 py-1 rounded">Agregar</button>
+    <button type="button" class="add-postres bg-green-500 text-white  italic rounded-full w-[80px] self-end">Agregar</button>
   </div>
 </div>
 </div>
-          <label for="comentarios" class="block text-center">Comentarios o Acotaciones:</label>
+          <label for="comentarios" class="block text-center text-xl font-semibold">Comentarios o Acotaciones</label>
           <textarea id="comentarios" name="comentarios" class="w-full  px-2 py-0 border border-gray-700 rounded-xl"></textarea>
         </fieldset>
         <fieldset
           class="flex justify-center align-middle flex-wrap text-center gap-3 border border-blue-700"
         >
-          <legend class="mx-auto text-4xl font-extrabold">Datos personales</legend>
-        <div class="block mx-auto w-full">
+          <legend class="mx-auto text-4xl font-extrabold tracking-widest">Datos personales</legend>
+        <div class="block mx-auto w-full mt-5">
         <label for="nombre">Nombre</label>
           <input
             type="text"

@@ -20,6 +20,9 @@ module.exports = {
       // => @media (min-width: 1280px) { ... }
     },
     extend: {
+      fontFamily: {
+        SansSerif: ['SansSerif', 'sans-serif'], // Fallback a sans-serif
+      },
       backgroundImage: {
         "hero-pattern": "url('/src/hero-pattern.jpg')",
       },
