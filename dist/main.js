@@ -1,6 +1,6 @@
-import { carousel } from "./functions/carousel.js";
-import {contadorPlatos, FechaActual, platillos, sendForm } from "./functions/functionsForm.js";
-import {toogleMenu} from "./functions/toogleMenu.js";
+import { carousel } from "../src/functions/carousel.js";
+import {contadorPlatos, FechaActual, platillos, sendForm } from "../src/functions/functionsForm.js";
+import {toogleMenu} from "../src/functions/toogleMenu.js";
 
 document.addEventListener("DOMContentLoaded",()=>{
     toogleMenu(".button-nav",".nav");
