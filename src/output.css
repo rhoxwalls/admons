@@ -988,24 +988,28 @@ video {
   background-image: url(./Assets/BG-menu1.png);
 }
 
+.bg-\[url\(\.\/Assets\/BG-reservas\.png\)\] {
+  background-image: url(./Assets/BG-reservas.png);
+}
+
+.bg-\[url\(\.\/Assets\/BG-tragos\.jpg\)\] {
+  background-image: url(./Assets/BG-tragos.jpg);
+}
+
+.bg-\[url\(\.\/Assets\/exibidoras\.webp\)\] {
+  background-image: url(./Assets/exibidoras.webp);
+}
+
 .bg-\[url\(\.\/Assets\/pexels-diego-moreno-3258495-9292084\.jpg\)\] {
   background-image: url(./Assets/pexels-diego-moreno-3258495-9292084.jpg);
 }
 
-.bg-\[url\(\.\/assets\/BG-licores\.jpg\)\] {
-  background-image: url(./assets/BG-licores.jpg);
+.bg-\[url\(\.\/aussets\/BG-licores\.jpg\)\] {
+  background-image: url(./aussets/BG-licores.jpg);
 }
 
-.bg-\[url\(\.\/assets\/BG-reservas\.png\)\] {
-  background-image: url(./assets/BG-reservas.png);
-}
-
-.bg-\[url\(\.\/assets\/BG-tragos\.jpg\)\] {
-  background-image: url(./assets/BG-tragos.jpg);
-}
-
-.bg-\[url\(\.\/assets\/exibidoras\.webp\)\] {
-  background-image: url(./assets/exibidoras.webp);
+.bg-\[url\(\.\/Assets\/BG-licores\.jpg\)\] {
+  background-image: url(./Assets/BG-licores.jpg);
 }
 
 .bg-center {
