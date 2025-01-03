@@ -4,7 +4,6 @@ const d = document;
 export function FechaActual() {
   const today = new Date().toISOString().split("T")[0];
   document.querySelector("#fecha").setAttribute("min", today);
-  console.log(today);
 }
 
 FechaActual();
